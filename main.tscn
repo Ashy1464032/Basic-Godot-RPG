@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://few7sx0c8nxx"]
+[gd_scene load_steps=4 format=3 uid="uid://few7sx0c8nxx"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_xcmbk"]
-[ext_resource type="PackedScene" uid="uid://bmprt5c5umib7" path="res://background-main.tscn" id="2_fvmqe"]
+[ext_resource type="PackedScene" uid="uid://bmprt5c5umib7" path="res://Assets/Backgrounds/background-main.tscn" id="2_fvmqe"]
+[ext_resource type="PackedScene" uid="uid://db8uyrtb6ecyg" path="res://Assets/sounds/music/background_music.tscn" id="3_20w31"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_xcmbk")
@@ -20,7 +21,12 @@ offset_right = 1131.0
 offset_bottom = 865.0
 text = "Quit"
 
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("3_20w31")]
+
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_fvmqe")]
+z_index = -1
+position = Vector2(962, 499)
+scale = Vector2(1.00738, 1.00803)
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
