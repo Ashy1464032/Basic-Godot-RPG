@@ -20,4 +20,4 @@ shape = SubResource("RectangleShape2D_tkomq")
 offset_left = -4.0
 offset_top = 905.0
 offset_right = 1940.0
-offset_bottom = 1093.0
+offset_bottom = 1106.0
