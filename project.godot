@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Project Rpg"
 config/description="Basic RPG project IDK"
-run/main_scene="res://main.tscn"
+run/main_scene="res://Scenes/menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
